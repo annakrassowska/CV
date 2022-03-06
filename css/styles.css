@@ -272,6 +272,7 @@ figure {
 
 img,
 svg {
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -1052,6 +1053,8 @@ progress {
 .gy-5 {
   --bs-gutter-y: 3rem;
 }
+
+
 
 @media (min-width: 576px) {
   .col-sm-auto {
@@ -4247,17 +4250,9 @@ a .btn-primary {
 }
 
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  height: 300px;
+  padding: 10px 0;
 }
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -10944,32 +10939,21 @@ section.resume-section {
   padding-bottom: 5rem;
   max-width: 75rem;
 }
+
 section.resume-section .resume-section-content {
   width: 100%;
 }
 
-.cards {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.card {
-  border: none;
-  margin-right: 5%;
-  /* padding-right: 60px; */
-}
-
-
 @media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
   .cards {
-    flex-direction: row;
-    }
+    display: flex;
+  }
+  .card {
+    padding: 0 10px;
+  }
 }
+
+
 @media (min-width: 992px) {
   section.resume-section {
     padding-left: 3rem;
